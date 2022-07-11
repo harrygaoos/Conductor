@@ -104,7 +104,7 @@ private class CityGridAdapter(
       binding.title.text = item.title
 
       binding.image.transitionName = itemView.resources.getString(R.string.transition_tag_image_named, item.title)
-      binding.image.transitionName = itemView.resources.getString(R.string.transition_tag_title_named, item.title)
+      binding.title.transitionName = itemView.resources.getString(R.string.transition_tag_title_named, item.title)
 
       itemView.setOnClickListener { modelClickListener(item) }
     }
